@@ -1,0 +1,24 @@
+{% extends "layout.html" %} {% block content1 %}
+ {% for key,value in employ.items() %}
+<div>
+  <table>
+    <tr>
+      <td>ID:</td>
+      <td>{{key}}</td>
+    </tr>
+    <tr>
+      <td>NAME:</td>
+      <td>{{value["name"]}}</td>
+    </tr>
+    <tr>
+      <td>age:</td>
+      <td>{{value["age"]}}</td>
+    </tr>
+    <tr>
+      <td>position:</td>
+      <td>{{value["position"]}}</td>
+    </tr>
+  </table>
+</div>
+</br>
+{% endfor %} {% endblock content1 %}
