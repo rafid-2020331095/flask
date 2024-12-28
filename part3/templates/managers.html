@@ -1,7 +1,7 @@
 {% extends "layout.html" %} 
 {% block content1 %} 
 {% for key,value in employ.items() %}
-{% if value["position"]=="manager" %}
+{% if value["position"].lower()=="manager" %}
 <div>
   <table>
     <tr>
